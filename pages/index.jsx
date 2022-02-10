@@ -14,7 +14,10 @@ import SeccionFinal from "../Components/SeccionFinal";
 export default function Home() {
   return (
     <>
-      <Layout title="Josué L. | Inicio" description="Desarrollador Front-End">
+      <Layout
+        title="Josué L. | Inicio"
+        description="Portafolio de desarrollador Front-End autodidacta"
+      >
         <div className="container">
           <section>
             <Hero

@@ -4,7 +4,6 @@
   "homepage": "https://ellobobohemio.github.io/portafolio/",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

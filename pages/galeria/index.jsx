@@ -24,7 +24,10 @@ import Cartel from "../../public/img/galeria/Cartel-min.webp";
 
 export default function Galeria() {
   return (
-    <Layout title="Josué L. | Galería">
+    <Layout
+      title="Josué L. | Galería"
+      description="Galería de proyectos realizados por mi siguiendo los fundamentos de diseño"
+    >
       <div className="container">
         <section>
           <Hero
