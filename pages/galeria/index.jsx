@@ -104,13 +104,13 @@ export default function Galeria() {
               titulo="Paisaje"
               tags={["Fibonacci", "Composición radial", "Colores Complementarios"]}
               img={Paisaje}
-              link="https://twitter.com/BohemioLobo/status/1352351594482905088"
+              link="https://twitter.com/BohemioLobo/status/1360311849862979597"
             />
             <ImagenGaleria
               titulo="Cartel Marca"
               tags={["Degradados", "Simetría", "Colores Complementarios"]}
               img={Cartel}
-              link="https://twitter.com/BohemioLobo/status/1352351594482905088"
+              link="https://twitter.com/BohemioLobo/status/1361484585876488192"
             />
           </article>
 
