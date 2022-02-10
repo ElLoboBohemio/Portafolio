@@ -11,7 +11,6 @@
   width: 15px;
 }
 
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #202540;
@@ -31,8 +30,6 @@
 ::-webkit-scrollbar-corner{
   border-radius: 10px;
 }
-
-
 
 html,
 body {
