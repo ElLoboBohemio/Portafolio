@@ -4,10 +4,39 @@
   margin: 0;
 }
 
+/*SCROLL-BAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202540;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F2B924;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F2B924;
+} 
+
+::-webkit-scrollbar-corner{
+  border-radius: 10px;
+}
+
+
+
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 body{
@@ -43,16 +72,19 @@ li{
 h1{
   font-size: 67.77px;
   color: #F2B924;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2{
   font-size: 41.89px;
   color: #F2B924;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h3{
   font-size: 25.89px; 
   color: #F2B924;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p, button, li, a, span{

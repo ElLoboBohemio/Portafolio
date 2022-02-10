@@ -1,11 +1,14 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Head from "next/head";
 
 export default function Layout({ children, title, description }) {
   return (
     <>
-      <title>{title}</title>
-      <meta name="description" content={description} />
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Head>
 
       <div>
         <Navbar />
