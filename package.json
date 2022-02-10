@@ -1,8 +1,10 @@
 {
   "name": "portafolio",
   "version": "0.1.0",
+  "homepage": "https://ellobobohemio.github.io/portafolio/",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
