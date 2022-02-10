@@ -1,7 +1,6 @@
 {
   "name": "portafolio",
-  "version": "0.1.0",
-  "homepage": "https://ellobobohemio.github.io/portafolio/",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,13 +10,10 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
-    "gray-matter": "^4.0.3",
     "next": "11.1.0",
     "next-images": "^1.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
     "sass": "^1.38.2"
   },
   "devDependencies": {
