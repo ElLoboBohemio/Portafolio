@@ -31,10 +31,25 @@
   border-radius: 10px;
 }
 
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../assets/Merriweather/Merriweather-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/Montserrat/Montserrat-VariableFont_wght.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
 html,
 body {
   font-family: 'Merriweather', serif;
 }
+
 
 body{
   background-color: #202C7F;
