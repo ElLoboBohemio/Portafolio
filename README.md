@@ -4,9 +4,9 @@
   Portafolio de proyectos de Front-End y galeria de proyectos personales de diseño gráfico.
 </div>
 
-<h2 align="center"><a href="portafolio-josue-lobo.vercel.app" target="_blank">Demo</a></h2>
+<h2 align="center"><a href="https://portafolio-josue-lobo.vercel.app/" target="_blank">Demo</a></h2>
 
-<a href="portafolio-josue-lobo.vercel.app" target="_blank"><img src="https://i.postimg.cc/Y2PVrQZb/Portafolio.png" alt="Previsualización del sitio"></a>
+<a href="https://portafolio-josue-lobo.vercel.app/" target="_blank"><img src="https://i.postimg.cc/Y2PVrQZb/Portafolio.png" alt="Previsualización del sitio"></a>
 
 ## Contenidos
 
