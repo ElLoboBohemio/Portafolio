@@ -1,9 +1,17 @@
-html,
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html,
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body{
+  background-color: #202C7F;
 }
 
 a {
@@ -11,6 +19,73 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container{
+  margin: 0 70px;
+  height: inherit;
+}
+
+ul{
+  padding-left: 20px;
+}
+
+li{
+  list-style-type: '//';
+  padding-inline-start: 10px;
+}
+
+@media (min-width: 768px) {
+  .container{
+    margin: 0 140px;
+  }
+}
+
+/*Font Sizes Regular*/
+h1{
+  font-size: 67.77px;
+  color: #F2B924;
+}
+
+h2{
+  font-size: 41.89px;
+  color: #F2B924;
+}
+
+h3{
+  font-size: 25.89px; 
+  color: #F2B924;
+}
+
+p, button, li, a, span{
+  font-size: 16px;
+}
+
+p, a, span, li {
+  color: #BFC9FF;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+button{
+  transition: .5s;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+
+/*Mobile Fonts*/
+@media (max-width: 768px){
+  h1{
+    font-size: 45.23px;
+  }
+  
+  h2{
+    font-size: 31.99px;
+  }
+  
+  h3{
+    font-size: 22.62px; 
+  }
 }

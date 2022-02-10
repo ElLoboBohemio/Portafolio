@@ -1,0 +1,58 @@
+@use 'utils' as *;
+
+.proyecto{
+  margin: 40px 0;
+  border-radius: 25px;
+}
+
+.proyecto__img{
+  border-radius: 10px;
+}
+
+.proyecto__texto{
+  p{
+    margin: 20px 0;
+  }
+}
+
+.tags{
+  @include grid(45%);
+  margin-top: 10px;
+  gap: 10px 5%;
+
+  span{
+    border-bottom: 2.5px solid $color-texto;
+    color: $color-texto;
+    text-align: center;
+  }
+}
+
+.links{
+  @include grid(45%);
+  gap: 0 5%;
+  margin-top: 20px;
+
+  :first-child > button{
+    width: 100%;
+    @include Btn(true);
+    color: $color-foreground;
+    font-weight: bold;
+  }
+
+  :last-child > button{
+    width: 100%;
+    @include Btn(false);
+    color: $color-titulos;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 769px) {
+  .proyecto{
+    @include grid(45%);
+    gap: 0 5%;
+  }
+  .proyecto__img{
+    width: 200px !important;
+  }
+}

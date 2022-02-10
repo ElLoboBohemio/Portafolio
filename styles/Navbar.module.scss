@@ -1,0 +1,104 @@
+@use 'utils' as *;
+
+////Indice////
+
+//Div Logos
+//Tamaño Logos
+//Sidebar
+//Media Query
+
+.nav{
+  width: 100%;  
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  background-color: $color-foreground;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+//Div Logos
+.nav__div{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: inherit;
+}
+
+//Tamaño Logos
+.nav__logo{
+  width: 45px;
+  height: 45px;
+  transition: .5s;
+
+  &:hover{
+    transform: scale(1.10);
+  }
+}
+
+.nav__toggle{
+  width: 25px;
+  height: 25px;
+
+  position: relative;
+  z-index: 3;
+
+  transition: .5s;
+
+  &:hover{
+    transform: scale(1.25);
+  }
+}
+
+//Sidebar
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $color-fondo;
+
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+
+  transition: 1s;
+  right: 100%;
+}
+
+.sidebar.active{
+  right: 0;
+}
+
+.sidebar__a{
+  color: $color-titulos;
+  margin: 0 10px;
+  font-size: $h3-size;
+  font-weight: 600;
+  transition: .5s;
+
+  &:hover{
+    text-decoration: underline;
+    transform: scale(1.25);
+  }
+}
+
+//Media Query
+@media (min-width: 769px) {
+  .nav{
+    height: 80px;
+  }
+
+  .nav__logo{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav__bars{
+    width: 50px;
+    height: 50px;
+  }
+}

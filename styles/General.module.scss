@@ -1,0 +1,62 @@
+@use 'utils' as *;
+
+.hero, .seccion__final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-foreground;
+  @include anti-container(false, 75px);
+
+  svg{
+    margin: 40px;
+    width: 75%;
+    max-width: 250px;
+    align-self: center;
+    animation: Tambalear 10s ease-in-out infinite;
+  }
+
+  button{
+    @include Btn (true);
+    font-weight: bold;
+    width: 150px;
+    margin-top: 15px;
+  }
+
+  p{
+    margin: 15px 0;
+  }
+
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  a{
+    color: $color-titulos;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+//Media Query
+@media (min-width: 600px) {
+  .hero, .seccion__final{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @include anti-container(false, 125px);
+    
+    div{
+      align-items: flex-start;
+      width: 450px;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .hero, .seccion__final{
+    @include anti-container(true, 125px)
+  }
+}

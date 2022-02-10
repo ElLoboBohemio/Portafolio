@@ -1,0 +1,70 @@
+$color-fondo: #202C7F;
+$color-foreground: #202540;
+
+$color-titulos: #F2B924;
+$color-texto: #BFC9FF;
+
+$h1-size: 67.77px;
+$h2-size: 41.89px;
+$h3-size: 25.89px;
+$p-size:  16px;
+$span-size: 9.89px;
+
+@mixin Btn ($primary: true){
+  padding: 2.5px 0;
+  border-radius: 10px;
+  border: 2.5px solid $color-titulos;
+
+  @if $primary{
+    background-color: $color-titulos;
+  }@else{
+    background-color: transparent;
+  }
+}
+
+@mixin grid ($size) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+}
+
+@mixin anti-container($desktop: true, $margin-y) {
+  @if $desktop == true {
+  padding: $margin-y 140px $margin-y 140px;
+  margin: 0 140px 0 -140px;
+  width: calc(100% + 280px);
+    
+  } @else {
+  padding: $margin-y 70px $margin-y 70px;
+  margin: 0 70px 0 -70px;
+  width: calc(100% + 140px);
+  }
+}
+
+@mixin separador-deg($deg) {
+  background: rgb(32,37,64);
+  background: linear-gradient($deg, rgba(32,37,64,1) 0%, rgba(32,44,127,1) 100%); 
+}
+
+//Animaciones
+@keyframes Tambalear {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(10deg);}
+  40% {transform: rotate(0deg);}
+  60% {transform: rotate(-10deg);}
+
+  80% {transform: rotate(0deg);}
+  
+  90% {transform: rotate(10deg);}
+  95% {transform: rotate(-10deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes aparecer {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes desaparecer {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}

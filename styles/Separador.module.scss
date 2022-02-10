@@ -1,0 +1,21 @@
+@use 'utils' as *;
+
+.separador, .separador__invertido{
+  text-align: center;
+
+  @include anti-container(false, 50px);
+}
+
+.separador{
+  @include separador-deg(180deg);
+}
+
+.separador__invertido{
+  @include separador-deg(0deg);
+}
+
+@media (min-width: 769px) {
+  .separador, .separador__invertido{
+    @include anti-container(true, 50px)
+  }
+}
