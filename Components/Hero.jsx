@@ -1,5 +1,6 @@
 //SVG
 import Investiga from "../svgs/Investiga";
+import Link from "next/link";
 
 //SCSS
 import styles from "../styles/General.module.scss";
@@ -12,12 +13,14 @@ export default function Hero({ h1, p, bold }) {
         <p>
           {p} <b>{bold}</b>{" "}
         </p>
-        <a
+        <Link
           href="https://www.canva.com/design/DAEn3igpKRE/0lKgX5kNk_EFlsJ52ql6NQ/view?utm_content=DAEn3igpKRE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
-          about="_blank"
+          passHref={true}
         >
-          <button>Ver CV</button>
-        </a>
+          <a about="_blank">
+            <button>Ver CV</button>
+          </a>
+        </Link>
       </div>
       <Investiga />
     </article>
