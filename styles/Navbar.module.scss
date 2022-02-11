@@ -37,6 +37,17 @@
   }
 }
 
+.nav__btn{
+  border: none;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+
+  &:hover{
+    transform: scale(1.25);
+  }
+}
+
 .nav__toggle{
   width: 25px;
   height: 25px;
@@ -46,9 +57,7 @@
 
   transition: .5s;
 
-  &:hover{
-    transform: scale(1.25);
-  }
+ 
 }
 
 //Sidebar

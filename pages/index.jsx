@@ -6,9 +6,9 @@ import Separador from "../Components/Separador";
 import Hero from "../Components/Hero";
 
 //IMGs
-import TF from "../public/img/index/TF.png";
-import Email from "../public/img/index/Email.png";
-import Weather from "../public/img/index/Weather.png";
+import TF from "../public/img/index/TF.webp";
+import Quote from "../public/img/index/Quote.webp";
+import Weather from "../public/img/index/Weather.webp";
 import SeccionFinal from "../Components/SeccionFinal";
 
 export default function Home() {
@@ -33,6 +33,8 @@ export default function Home() {
               descripcion="Sitio web informativo de la carrera de Terapia Física con animaciones en los SVG's"
               imgSrc={TF}
               tags={["React.js", "Sass", "SEO", "SVG"]}
+              demo="https://ellobobohemio.github.io/Terapia-Fisica/"
+              repo="https://github.com/ElLoboBohemio/Terapia-Fisica"
             />
 
             <Proyecto
@@ -40,13 +42,17 @@ export default function Home() {
               descripcion="Sitio web para consultar el clima con el nombre de la ciudad. Desarrollado con los cuidados pertinentes a claves de API"
               imgSrc={Weather}
               tags={["React.js", "Tailwind", "Hook-Form", "API"]}
+              demo="https://elated-mayer-1a63d5.netlify.app/"
+              repo="https://github.com/ElLoboBohemio/Weather-API"
             />
 
             <Proyecto
-              titulo="Responsive Email"
-              descripcion="Maquetado de email responsive compatible entre distintos proveedores de emails"
-              imgSrc={Email}
-              tags={["MJML", "SVG", "Responsive", "Compatible"]}
+              titulo="Random Quotes"
+              descripcion="Sitio web que muestra citas célebres de personajes históricos de manera aleatoria."
+              imgSrc={Quote}
+              tags={["React.js", "API", "Responsive", "Twitter"]}
+              demo="https://codepen.io/bohemiolobo/full/vYJYzNZ"
+              repo="https://github.com/ElLoboBohemio/Random-Quotes"
             />
 
             <Separador titulo="Acerca" invertir={true} />

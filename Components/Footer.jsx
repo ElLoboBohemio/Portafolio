@@ -18,13 +18,13 @@ export default function Footer() {
 
         <section className={styles.footer__section}>
           <article className={styles.footer__article}>
-            <Link href="https://github.com/ElLoboBohemio/ElLoboBohemio" passHref={true}>
-              <a target="_blank">
+            <Link href="https://github.com/ElLoboBohemio/ElLoboBohemio" passHref>
+              <a target="_blank" aria-label="Github">
                 <Github className={styles.footer__svg} />
               </a>
             </Link>
-            <Link href="https://codepen.io/bohemiolobo" passHref={true}>
-              <a target="_blank">
+            <Link href="https://codepen.io/bohemiolobo" passHref>
+              <a target="_blank" aria-label="Codepen">
                 <Codepen className={styles.footer__svg} />
               </a>
             </Link>
@@ -33,13 +33,13 @@ export default function Footer() {
           <p className={styles.footer__span}>©Hecho con 💛 por Josué L.</p>
 
           <article className={styles.footer__article}>
-            <Link href="https://twitter.com/BohemioLobo" passHref={true}>
-              <a target="_blank">
+            <Link href="https://twitter.com/BohemioLobo" passHref>
+              <a target="_blank" aria-label="Twitter">
                 <Twitter className={styles.footer__svg} />
               </a>
             </Link>
-            <Link href="https://www.linkedin.com/in/josu%C3%A9-lobo/" passHref={true}>
-              <a target="_blank">
+            <Link href="https://www.linkedin.com/in/josu%C3%A9-lobo/" passHref>
+              <a target="_blank" aria-label="Linkedin">
                 <Linkedin className={styles.footer__svg} />
               </a>
             </Link>

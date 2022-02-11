@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import styles from "../styles/Galeria.module.scss";
 
 import { useState } from "react";
 
-export default function ImagenGaleria({ titulo, img, tags, verMas }) {
+export default function ImagenGaleria({ titulo, img, tags, link }) {
   const [Popup, setPopup] = useState(true);
   const mostrarImg = () => setPopup(!Popup);
 
@@ -23,7 +25,7 @@ export default function ImagenGaleria({ titulo, img, tags, verMas }) {
           <li key={index}>{tag}</li>
         ))}
       </ul>
-      <a href={verMas} about="_blank">
+      <a href={link} about="_blank">
         <button>Ver más</button>
       </a>
     </div>

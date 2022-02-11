@@ -18,19 +18,19 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <div className="container">
         <div className={styles.nav__div}>
-          <Link href="/">
-            <a>
+          <Link href="/" passHref>
+            <a aria-label="Logo">
               <Logo className={styles.nav__logo} />
             </a>
           </Link>
 
-          <a onClick={mostrarMenu}>
+          <button className={styles.nav__btn} onClick={mostrarMenu}>
             {Menu ? (
               <MenuBars className={styles.nav__toggle} />
             ) : (
               <Equis className={styles.nav__toggle} />
             )}
-          </a>
+          </button>
         </div>
       </div>
 

@@ -68,7 +68,7 @@ export default function Galeria() {
               titulo="Lobo geométrico"
               tags={["Geométrico", "Simétrico", "Colores Cromáticos"]}
               img={Lobo}
-              link="https://twitter.com/BohemioLobo/status/1356986018839351296"
+              link="https://twitter.com/BohemioLobo/status/1351231888980144132"
             />
             <ImagenGaleria
               titulo="Mario Bros Teatro"
