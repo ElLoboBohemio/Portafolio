@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import styles from "../styles/Proyecto.module.scss";
 
@@ -7,12 +6,10 @@ export default function Proyecto({ titulo, descripcion, imgSrc, tags, demo, repo
   return (
     <article className={styles.proyecto}>
       {/* Columna Img */}
-      <Image
-        className={styles.proyecto__img}
-        src={imgSrc}
-        alt="Previsualización de proyecto"
-        layout="intrinsic"
-      />
+      <div className={styles.proyecto__img}>
+        <Image src={imgSrc} alt="Previsualización de proyecto" layout="fill" />
+      </div>
+
       {/* Columna Texto */}
       <div className={styles.proyecto__texto}>
         <h3>{titulo}</h3>

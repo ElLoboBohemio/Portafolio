@@ -24,7 +24,7 @@ const Navbar = () => {
             </a>
           </Link>
 
-          <button className={styles.nav__btn} onClick={mostrarMenu}>
+          <button className={styles.nav__btn} onClick={mostrarMenu} aria-label="Toggle Menu">
             {Menu ? (
               <MenuBars className={styles.nav__toggle} />
             ) : (
