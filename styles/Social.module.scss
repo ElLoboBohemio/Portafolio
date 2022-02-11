@@ -1,0 +1,43 @@
+@use 'utils' as *;
+
+.social{
+  width: 100%;
+  
+  position: fixed;
+  top: 75%;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.social__div{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.social__svg{
+  width: 48px;
+  height: 48px;
+
+  margin: 10px 0;
+}
+
+@media (min-width: 769px) {
+  .social__div{
+    margin: 0 50px;
+  }
+
+  .social__svg{
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
+}

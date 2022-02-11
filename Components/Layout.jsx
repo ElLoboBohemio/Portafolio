@@ -1,6 +1,10 @@
+//Next.js
+import Head from "next/head";
+
+//Components
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Head from "next/head";
+import Social from "./Social";
 
 export default function Layout({ children, title, description }) {
   return (
@@ -14,7 +18,7 @@ export default function Layout({ children, title, description }) {
         <Navbar />
 
         <main>
-          <h1>HASKLDJSALK</h1>
+          <Social />
           {children}
         </main>
 
