@@ -1,14 +1,14 @@
-import Image from "next/image";
+//Subcomponente
+import Imagen from "./Imagen";
 
+//SCSS
 import styles from "../styles/Proyecto.module.scss";
 
-export default function Proyecto({ titulo, descripcion, imgSrc, tags, demo, repo }) {
+export default function Proyecto({ titulo, descripcion, img, tags, demo, repo }) {
   return (
     <article className={styles.proyecto}>
       {/* Columna Img */}
-      <div className={styles.proyecto__img}>
-        <Image src={imgSrc} alt="Previsualización de proyecto" layout="fill" />
-      </div>
+      <Imagen img={img} alt={titulo} />
 
       {/* Columna Texto */}
       <div className={styles.proyecto__texto}>

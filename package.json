@@ -1,6 +1,6 @@
 {
   "name": "portafolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,10 +12,16 @@
     "@fontsource/merriweather": "^4.5.4",
     "@fontsource/montserrat": "^4.5.5",
     "@svgr/webpack": "^5.5.0",
+    "glob": "^7.2.0",
+    "gray-matter": "^4.0.3",
     "next": "11.1.0",
     "next-images": "^1.8.1",
+    "next-mdx-remote": "^3.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-highlight": "^5.0.2",
+    "rehype-slug": "^5.0.1",
     "sass": "^1.38.2",
     "sharp": "^0.30.1"
   },

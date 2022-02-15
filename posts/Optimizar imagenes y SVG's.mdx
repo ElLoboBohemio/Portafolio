@@ -1,0 +1,90 @@
+---
+titulo: Optimizar imágenes, SVGs y videos
+tags:
+  - SVG
+  - Imagen
+date: 13-2-2022
+descripcion: El peso de cada archivo es vital para tener un buen rendimiento del sitio web, y reducir al máximo el peso de archivos multimedia es una buena práctica de desarrollo.
+---
+
+**En todos los métodos se mantiene la calidad, salvo excepciones especificadas.**
+
+## Imágenes
+
+Según las necesidades de tu proyecto, se puede optar por comprimir imágenes o cambiar el formato de las mismas,
+
+1. **Primer opción (Solo comprimir imágenes):**<br />
+   Recomiendo usar [web de compresión](https://compressjpeg.com/es/), puedes seleccionar el formato a comprimir.
+
+2. **Segunda opción (`.webp`):**<br />
+   Recomiendo usar [web de conversión](https://www.convertsimple.com/convert-png-to-webp/) (puedes convertir varias a la vez)
+
+3. **Conversión con bajar calidad de imágen (Usando GIMP):**<br />
+   Al exportar la imagen a `.webp` se puede bajar la "Calidad de imagen" a 85%.<br /><br />
+   **NOTA: (No recomiendo bajar más de ese valor, por daño a la imagen)**
+
+## SVGs
+
+Optimizar `.svg` es por medio de minificar su código, recomiendo usar esta [web](https://jakearchibald.github.io/svgomg/).
+Sugiero ver la previsualización y **nunca marcar la opción de "Remove xmlns"**.
+
+## Videos
+
+Recomiendo usar [VLC](https://www.videolan.org/vlc/index.es.html), una vez instalado instó a ver el siguiente [video tutorial](https://www.youtube.com/watch?v=3SfvRETNGfw) para los pasos y configuración.<br /><br />
+
+De igual manera aquí un resumen de los pasos:
+
+1. "Media" > "Convert/Save"
+2. "+ Add" y seleccionar el/los videos a comprimir > "Convert/Save"
+3. En profile seleccionar la opción de "Video - H.264 + MP3 (MP4)" y cliquear en 🔧(Llave inglesa)
+4. En el apartado de "Encapsulation" > Seleccionar "MP4/MOV"
+5. Cambiar de pestaña a "Video Codec" y checar la palomita de "Video"
+
+```js
+Codec: "H-264"
+Bitrate: "Not Used"
+Quality: "Not Used"
+Frame Rate: "Same as Source"
+```
+
+6. Al lado del "Video Codec" seleccionar la subpestaña de "Resolution"
+
+```js
+Scale: "1";
+Width: "Auto";
+Height: "Auto";
+```
+
+7. Al lado del "Resolution" seleccionar la subpestaña de "Filters"
+
+```js
+Todo sin marcar
+```
+
+8. A la par de la pestaña de "Video Codec" cambiar a la pestaña "Audio Codec" > Checar la palomita de "Audio"
+
+```js
+Codec: "MP3"
+Bitrate: "128 kb/s"
+Channels: 2
+Sample Rate: 44100 Hz
+```
+
+9. A la par de la subpestaña "Encoding parameters" seleccionar la subpestaña de "Filters"
+
+```js
+Todo sin marcar
+```
+
+10. A la par de la pestaña de "Audio Codec" cambiar a la pestaña "Subtitles"
+
+```js
+Subtitles: "Sin marcar";
+```
+
+11. Click al boton "Save"
+
+12. Lo que resta, es seleccionar el destino del archivo convertido.
+
+A partir de aquí, verás que progresará la barra de video. Finalmente verás tu archivo comprimido en la ruta destino.
+Te insto a ver la diferencia de peso entre el archivo original y el procesado.

@@ -6,7 +6,7 @@ import { useState } from "react";
 import styles from "../styles/Navbar.module.scss";
 
 //SVG
-import Logo from "../svgs/Logo";
+import Logo from "../svgs/Logo.jsx";
 import MenuBars from "../svgs/Menu";
 import Equis from "../svgs/Equis";
 
@@ -35,11 +35,14 @@ const Navbar = () => {
       </div>
 
       <div className={Menu ? `${styles.sidebar}` : `${styles.sidebar} ${styles.active}`}>
-        <Link href="/">
+        <Link href="/" passHref>
           <a className={styles.sidebar__a}>Inicio</a>
         </Link>
-        <Link href="/galeria">
+        <Link href="/galeria" passHref>
           <a className={styles.sidebar__a}>Galería</a>
+        </Link>
+        <Link href="/blog" passHref>
+          <a className={styles.sidebar__a}>Blog</a>
         </Link>
       </div>
     </nav>

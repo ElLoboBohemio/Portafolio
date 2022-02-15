@@ -45,6 +45,20 @@ $span-size: 9.89px;
   background: linear-gradient($deg, rgba(32,37,64,1) 0%, rgba(32,44,127,1) 100%); 
 }
 
+@mixin social(){
+  position: fixed;
+  top: 75%;
+
+  display: flex;
+  justify-content: space-between;
+
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
 //Animaciones
 @keyframes Tambalear {
   0% {transform: rotate(0deg);}

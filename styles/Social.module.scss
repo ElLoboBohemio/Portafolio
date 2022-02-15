@@ -1,20 +1,13 @@
 @use 'utils' as *;
 
-.social{
-  width: 100%;
-  
-  position: fixed;
-  top: 75%;
+.social__izq{
+  @include social;
   left: 0;
+}
 
-  display: flex;
-  justify-content: space-between;
-
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+.social__der{
+  @include social;
+  right: 0;
 }
 
 .social__div{
@@ -32,10 +25,11 @@
 
 @media (min-width: 769px) {
   .social__div{
-    margin: 0 50px;
+    margin: 0 45px;
   }
 
   .social__svg{
+    transition: .5s;
     &:hover{
       transform: scale(1.15);
     }

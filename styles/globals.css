@@ -1,3 +1,9 @@
+
+:root{
+  --amarillo: #f2b924;
+  --texto: #BFC9FF;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,28 +24,26 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F2B924;
+  background: #f2b924;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F2B924;
-} 
+  background: #f2b924;
+}
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
   border-radius: 10px;
 }
 
-
 html,
 body {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
-
-body{
-  background-color: #202C7F;
+body {
+  background-color: #202c7f;
 }
 
 a {
@@ -47,76 +51,104 @@ a {
   text-decoration: none;
 }
 
-.container{
+.container {
   margin: 0 70px;
   height: inherit;
 }
 
-ul{
+ul {
   padding-left: 20px;
 }
 
-li{
-  list-style-type: '//';
-  padding-inline-start: 10px;
-}
-
 @media (min-width: 768px) {
-  .container{
+  .container {
     margin: 0 140px;
   }
 }
 
 /*Font Sizes Regular*/
-h1{
+h1 {
   font-size: 67.77px;
-  color: #F2B924;
-  font-family: 'Montserrat', sans-serif;
+  color: #f2b924;
+  font-family: "Montserrat", sans-serif;
 }
 
-h2{
+h2 {
   font-size: 41.89px;
-  color: #F2B924;
-  font-family: 'Montserrat', sans-serif;
+  color: #f2b924;
+  font-family: "Montserrat", sans-serif;
 }
 
-h3{
-  font-size: 25.89px; 
-  color: #F2B924;
-  font-family: 'Montserrat', sans-serif;
+h3 {
+  font-size: 25.89px;
+  color: #f2b924;
+  font-family: "Montserrat", sans-serif;
 }
 
-p, button, li, a, span{
+p,
+button,
+li,
+a{
   font-size: 16px;
 }
 
-p, a, span, li {
-  color: #BFC9FF;
+p,
+a,
+li {
+  color: #bfc9ff;
 }
 
-a, button{
+a,
+button {
   cursor: pointer;
 }
 
-button{
-  transition: .5s;
+button {
+  transition: 0.5s;
 }
 
-button:hover{
+button:hover {
   transform: scale(1.05);
 }
 
 /*Mobile Fonts*/
-@media (max-width: 768px){
-  h1{
+@media (max-width: 768px) {
+  h1 {
     font-size: 45.23px;
   }
-  
-  h2{
+
+  h2 {
     font-size: 31.99px;
   }
-  
-  h3{
-    font-size: 22.62px; 
+
+  h3 {
+    font-size: 22.62px;
   }
+}
+
+/*Posts*/
+h2 > a{
+  color: var(--amarillo);
+}
+
+p > a{
+  text-decoration: underline;
+}
+
+p > a:hover{
+  text-decoration: none;
+}
+
+code{
+  background-color: #282c34;
+  padding: 0 5px;
+}
+
+pre > code{
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+ol > li{
+  margin: 15px 0;
 }

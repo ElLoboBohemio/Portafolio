@@ -1,0 +1,90 @@
+---
+titulo: Usar SVGs en Next.js
+tags:
+  - Next.js
+  - SVG
+date: 31-8-2021
+descripcion: Next.js tiene una forma particular de utilizar SVGs, por ello te cuento cómo implementarlos.
+---
+
+## Dependencias
+
+Aprovechamos las siguientes dependencias [@svgr/webpack](https://react-svgr.com/docs/next/)
+y [@svgr/cli](https://react-svgr.com/docs/cli/). Luego de instalada, crea un archivo
+`next.config.js` en la ruta principal de tu proyecto, e inserta el siguiente código:
+
+```js
+module.exports = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+
+    return config;
+  },
+};
+```
+
+## Comandos
+
+Abre la terminal en la ruta de tu proyecto, e ingresa el archivo `.svg` como en el ejemplo:
+
+```js
+npx @svgr/cli -- folderConSvg/Equis.svg
+```
+
+## Nuevo SVG
+
+Obtendrás algo como esto en tu terminal de comandos:
+
+```js
+import * as React from "react";
+
+const SvgEquis = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.552 14.552" {...props}>
+    <g fill="#f2b924" fillRule="evenodd" transform="translate(120.574 1.654)">
+      <rect
+        width={18.643}
+        height={4.661}
+        x={74.768}
+        y={73.808}
+        ry={2.33}
+        style={{
+          fontVariationSettings: "normal",
+        }}
+        transform="rotate(135)"
+      />
+      <rect
+        width={18.643}
+        height={4.661}
+        x={66.817}
+        y={-86.42}
+        ry={2.33}
+        style={{
+          fontVariationSettings: "normal",
+        }}
+        transform="rotate(-135)"
+      />
+    </g>
+  </svg>
+);
+
+export default SvgEquis;
+```
+
+Deberás crear un archivo `.jsx` y pegar el resultado de tu línea de comandos. Finalmente, importalo como un componente cualquiera. Aquí te dejo un ejemplo:
+
+```js
+import Equis from "../svgs/SvgEquis.jsx";
+// Puedes quitar la terminación .jsx
+
+export default function Home() {
+  return (
+    <>
+      <h1>Ejemplo de Componente</h1>
+      <Equis />
+    </>
+  );
+}
+```

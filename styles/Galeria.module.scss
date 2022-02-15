@@ -9,7 +9,6 @@
 
 .ImagenGaleria{
   margin: 20px 0;
-
   h3{
     height: 80px;
   }
@@ -18,53 +17,10 @@
     height: 125px;
   }
 
-  img{
-    border-radius: 10px;
-  }
-  
-  //Layout modificado onClick
-  .ImagenGaleria__pop__on{
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-  }
-
-  //Layout modificado imagen onClick
-  .ImagenGaleria__div{
-    margin-bottom: 15px;
-    position: relative;
-    width: 100%;
-    height: 250px;
-
-    img{
-      object-fit: cover;
-      transition: transform .5s;
-
-
-      &:hover{
-        transform: scale(1.125);
-      }
-    }
-  }
-
-    //Layout modificado imagen onClick
-  .ImagenGaleria__div__pop{
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-color: $color-foreground;
-
-    img{
-      object-fit: contain;
-      animation: aparecer .5s;
-    }
-  }
-
   button{
     @include Btn(true);
     color: $color-foreground;
     font-weight: bold;
     width: 100%;
-  }
+  }  
 }

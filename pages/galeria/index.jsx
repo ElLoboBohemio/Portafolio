@@ -1,9 +1,9 @@
 //Componentes
-import Layout from "../../Components/Layout";
-import ImagenGaleria from "../../Components/ImagenGaleria";
-import Separador from "../../Components/Separador";
-import Hero from "../../Components/Hero";
-import SeccionFinal from "../../Components/SeccionFinal";
+import Layout from "../../components/Layout";
+import ImagenGaleria from "../../components/ImagenGaleria";
+import Separador from "../../components/Separador";
+import Hero from "../../components/Hero";
+import SeccionFinal from "../../components/SeccionFinal";
 
 //SCSS
 import styles from "../../styles/Galeria.module.scss";
@@ -25,7 +25,7 @@ import Cartel from "../../public/img/galeria/Cartel-min.webp";
 export default function Galeria() {
   return (
     <Layout
-      title="Josué L. | Galería"
+      title="Galería | Josué L."
       description="Galería de proyectos realizados por mi siguiendo los fundamentos de diseño"
     >
       <div className="container">

@@ -1,21 +1,21 @@
-import Layout from "../Components/Layout";
+import Layout from "../components/Layout";
 
 //Componentes
-import Proyecto from "../Components/Proyecto";
-import Separador from "../Components/Separador";
-import Hero from "../Components/Hero";
+import Proyecto from "../components/Proyecto";
+import Separador from "../components/Separador";
+import Hero from "../components/Hero";
 
 //IMGs
 import TF from "../public/img/index/TF.webp";
 import Quote from "../public/img/index/Quote.webp";
 import Weather from "../public/img/index/Weather.webp";
-import SeccionFinal from "../Components/SeccionFinal";
+import SeccionFinal from "../components/SeccionFinal";
 
 export default function Home() {
   return (
     <>
       <Layout
-        title="Josué L. | Inicio"
+        title="Inicio | Josué L."
         description="Portafolio de desarrollador Front-End autodidacta"
       >
         <div className="container">
@@ -31,7 +31,7 @@ export default function Home() {
             <Proyecto
               titulo="Terapia Física"
               descripcion="Sitio web informativo de la carrera de Terapia Física con animaciones en los SVG's"
-              imgSrc={TF}
+              img={TF}
               tags={["React.js", "Sass", "SEO", "SVG"]}
               demo="https://ellobobohemio.github.io/Terapia-Fisica/"
               repo="https://github.com/ElLoboBohemio/Terapia-Fisica"
@@ -40,7 +40,7 @@ export default function Home() {
             <Proyecto
               titulo="Weather API"
               descripcion="Sitio web para consultar el clima con el nombre de la ciudad. Desarrollado con los cuidados pertinentes a claves de API"
-              imgSrc={Weather}
+              img={Weather}
               tags={["React.js", "Tailwind", "Hook-Form", "API"]}
               demo="https://elated-mayer-1a63d5.netlify.app/"
               repo="https://github.com/ElLoboBohemio/Weather-API"
@@ -49,7 +49,7 @@ export default function Home() {
             <Proyecto
               titulo="Random Quotes"
               descripcion="Sitio web que muestra citas célebres de personajes históricos de manera aleatoria."
-              imgSrc={Quote}
+              img={Quote}
               tags={["React.js", "API", "Responsive", "Twitter"]}
               demo="https://codepen.io/bohemiolobo/full/vYJYzNZ"
               repo="https://github.com/ElLoboBohemio/Random-Quotes"

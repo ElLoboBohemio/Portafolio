@@ -1,10 +1,11 @@
 //Next.js
 import Head from "next/head";
 
-//Components
+//components
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Social from "./Social";
+import SocialIzq from "./SocialIzq";
+import SocialDer from "./SocialDer";
 
 export default function Layout({ children, title, description }) {
   return (
@@ -18,8 +19,9 @@ export default function Layout({ children, title, description }) {
         <Navbar />
 
         <main>
-          <Social />
+          <SocialIzq />
           {children}
+          <SocialDer />
         </main>
 
         <Footer />
