@@ -30,7 +30,7 @@ export default function Home() {
 
             <Proyecto
               titulo="Terapia Física"
-              descripcion="Sitio web informativo de la carrera de Terapia Física con animaciones en los SVG's"
+              descripcion="Sitio web informativo de la carrera de Terapia Física con animaciones en los SVGs"
               img={TF}
               tags={["React.js", "Sass", "SEO", "SVG"]}
               demo="https://ellobobohemio.github.io/Terapia-Fisica/"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { getPostFromSlug, getSlugs } from "../../src/api";
@@ -19,7 +18,9 @@ export default function Post({ post }) {
       <div className="container">
         <Hero h1={post.meta.titulo} blog={true} />
         <Separador titulo={null} invertir={false} />
+
         <MDXRemote {...post.source} />
+
         <Separador titulo={null} invertir={true} />
       </div>
     </Layout>
