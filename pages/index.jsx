@@ -7,7 +7,7 @@ import Hero from "../components/Hero";
 
 //IMGs
 import TF from "../public/img/index/TF.webp";
-import Quote from "../public/img/index/Quote.webp";
+import Music from "../public/img/index/Music.webp";
 import Weather from "../public/img/index/Weather.webp";
 import SeccionFinal from "../components/SeccionFinal";
 
@@ -49,7 +49,7 @@ export default function Home() {
             <Proyecto
               titulo="Music API"
               descripcion="Sitio web para consultar música con un buscador."
-              img={Quote}
+              img={Music}
               tags={["React.js", "API", "Redux Toolkit", "MUI"]}
               demo="https://lucky-truffle-330b24.netlify.app/"
               repo="https://github.com/ElLoboBohemio/api-music"
