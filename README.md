@@ -11,7 +11,7 @@
 ## Contenidos
 
 - [Herramientas](#Herramientas)
-- [Contact](#Contact)
+- [Contacto](#Contacto)
 
 ## Herramientas
 
@@ -19,7 +19,7 @@
 - [Sass](https://sass-lang.com/)
 - [Git](https://git-scm.com/)
 
-## Contact
+## Contacto
 
 - GitHub [ElLoboBohemio](https://{github.com/ElLoboBohemio})
 - Twitter [@BohemioLobo](https://{twitter.com/BohemioLobo})

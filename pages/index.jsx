@@ -39,7 +39,7 @@ export default function Home() {
 
             <Proyecto
               titulo="Weather API"
-              descripcion="Sitio web para consultar el clima con el nombre de la ciudad. Desarrollado con los cuidados pertinentes a claves de API"
+              descripcion="Sitio web para consultar el clima con el nombre de la ciudad."
               img={Weather}
               tags={["React.js", "Tailwind", "Hook-Form", "API"]}
               demo="https://elated-mayer-1a63d5.netlify.app/"
@@ -47,12 +47,12 @@ export default function Home() {
             />
 
             <Proyecto
-              titulo="Random Quotes"
-              descripcion="Sitio web que muestra citas célebres de personajes históricos de manera aleatoria."
+              titulo="Music API"
+              descripcion="Sitio web para consultar música con un buscador."
               img={Quote}
-              tags={["React.js", "API", "Responsive", "Twitter"]}
-              demo="https://codepen.io/bohemiolobo/full/vYJYzNZ"
-              repo="https://github.com/ElLoboBohemio/Random-Quotes"
+              tags={["React.js", "API", "Redux Toolkit", "MUI"]}
+              demo="https://lucky-truffle-330b24.netlify.app/"
+              repo="https://github.com/ElLoboBohemio/api-music"
             />
 
             <Separador titulo="Acerca" invertir={true} />
