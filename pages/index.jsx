@@ -15,42 +15,47 @@ export default function Home() {
   return (
     <>
       <Layout
-        title="Inicio | Josué L."
-        description="Portafolio de desarrollador Front-End autodidacta"
+        title="Josué Lobo | Content Editor & Especialista en Comunicación Científica"
+        description="Profesional multidisciplinario enfocado en la integridad de datos y divulgación clínica basada en evidencia. Estrategia de contenido digital con rigor analítico bajo la premisa de 'Investigar y crear'."
       >
         <div className="container">
           <section>
             <Hero
-              h1="¡Hola soy Josué Lobo!"
-              p="Desarrollador Front-End que construye sitios web que inspiren a"
-              bold='"Investigar y Crear".'
+              h1="¡Hola, soy Josué Lobo!"
+              p="Profesional analítico en formación continua, orientada a 'Investigar y crear', creando puentes entre la ciencia y el entorno digital. Especializado en la investigación clínica y crear narrativas de alto impacto,"
+              bold="priorizando la fidelidad de los datos."
             />
 
             <Separador titulo="Proyectos" invertir={false} />
 
             <Proyecto
-              titulo="Terapia Física"
-              descripcion="Sitio web informativo de la carrera de Terapia Física con animaciones en los SVGs"
+              titulo="Comunicación Basada en Evidencia: Terapia Física"
+              descripcion="Página web de divulgación científica desarrollada bajo estándares de rigor académico. El proyecto se centra en la síntesis de literatura clínica y la validación de fuentes (Fact-checking), integrando una arquitectura de referencias bibliográficas que asegura la veracidad y trazabilidad de la información técnica."
               img={TF}
-              tags={["React.js", "Sass", "SEO", "SVG"]}
+              tags={[
+                "Práctica Basada en Evidencia",
+                "Fact-checking Clínico",
+                "Rigor Editorial",
+                "React.js",
+              ]}
               demo="https://ellobobohemio.github.io/Terapia-Fisica/"
               repo="https://github.com/ElLoboBohemio/Terapia-Fisica"
             />
 
             <Proyecto
-              titulo="Weather API"
-              descripcion="Sitio web para consultar el clima con el nombre de la ciudad."
+              titulo="API de consulta de datos atmosféricos"
+              descripcion="Solución digital centrada en la arquitectura de la información y el consumo de datos en tiempo real. Prioriza la claridad de la interfaz y la entrega precisa de información meteorológica mediante la integración eficiente de APIs."
               img={Weather}
-              tags={["React.js", "Tailwind", "Hook-Form", "API"]}
+              tags={["Data Fetching", "API Integration", "Tailwind", "Responsive Design"]}
               demo="https://elated-mayer-1a63d5.netlify.app/"
               repo="https://github.com/ElLoboBohemio/Weather-API"
             />
 
             <Proyecto
-              titulo="Music API"
-              descripcion="Sitio web para consultar música con un buscador."
+              titulo="Explorador de Metadatos Multimedia"
+              descripcion="Sistema de búsqueda y gestión de contenido centrado en la clasificación eficiente de información. Desarrollado para garantizar un flujo de navegación intuitivo y una recuperación de datos optimizada mediante estados complejos."
               img={Music}
-              tags={["React.js", "API", "Redux Toolkit", "MUI"]}
+              tags={["Information Architecture", "Redux Toolkit", "MUI", "React.js"]}
               demo="https://lucky-truffle-330b24.netlify.app/"
               repo="https://github.com/ElLoboBohemio/api-music"
             />
@@ -58,12 +63,18 @@ export default function Home() {
             <Separador titulo="Acerca" invertir={true} />
 
             <SeccionFinal
-              titulo1='¿Por qué "Investiga y Crea"?'
-              p1="Desde el 2021 comencé a estudiar Diseño Gráfico y el Desarrollo Web por mi propia cuenta."
-              p2="En adelante, he estado indagando en los principios y realizando proyectos personales para concretar lo aprendido."
-              p3='"Investiga y Crea" terminó siendo la manera en definir mi manera de continuar aprendiendo.'
-              titulo2="Tecnologias"
-              args={["Javascript", "React.js", "Next.js", "Sass", "Tailwind CSS"]}
+              titulo1='La Filosofía: "Investigar y Crear"'
+              p1="Mi formación en Ciencias de la Salud en la UCR cimentó mi compromiso con el rigor científico. 'Investigar' representa para mí la búsqueda exhaustiva de evidencia y la verificación constante, pilares esenciales para garantizar la integridad de cualquier información."
+              p2="A partir de este análisis, 'Crear' se convierte en el proceso de traducir datos técnicos y complejos en soluciones digitales accesibles, donde la precisión clínica y la funcionalidad tecnológica convergen con un propósito claro."
+              p3="Esta metodología interdisciplinaria es el motor de mi evolución: un ciclo continuo de aprendizaje donde el pensamiento crítico y la ejecución técnica se unen para generar un impacto real en la comunicación científica."
+              titulo2="Ecosistema de Especialidades"
+              args={[
+                "Fact-checking Clínico",
+                "Estrategia de Contenido",
+                "React.js / Next.js / HTML & CSS",
+                "Arquitectura de Información",
+                "SEO Técnico",
+              ]}
             />
           </section>
         </div>

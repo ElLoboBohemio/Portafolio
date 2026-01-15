@@ -13,11 +13,13 @@ export default function Layout({ children, title, description }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="Content Editor, Salud, Divulgación Científica, Fact-checking, Estrategia Digital, Terapia Física, UCR"
+        />
       </Head>
-
+      <Navbar />
       <div>
-        <Navbar />
-
         <main>
           <SocialIzq />
           {children}
@@ -31,6 +33,6 @@ export default function Layout({ children, title, description }) {
 }
 
 Layout.defaultProps = {
-  title: "Josué L.",
-  description: "Desarrollador Front-End",
+  title: "Josué Lobo",
+  description: "Josué Lobo | Content Editor & Especialista en Comunicación Científica",
 };

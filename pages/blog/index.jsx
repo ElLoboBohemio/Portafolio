@@ -15,8 +15,8 @@ export default function Blog({ posts }) {
       <div className="container">
         <Hero
           h1="Blog"
-          p="Narro consejos personales relacionados con el desarrollo"
-          bold="Front-End."
+          p="Un espacio donde comparto guías prácticas de desarrollo y una selección de mis coberturas más destacadas en el área del"
+          bold="Front-End y el periodismo institucional."
         />
 
         <Separador titulo="Posts" invertir={false} />

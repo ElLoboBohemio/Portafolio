@@ -32,9 +32,8 @@ export default function Galeria() {
         <section>
           <Hero
             h1="Galería"
-            p="Estos son proyectos personales que he realizado para aplicar principios de diseño y
-                el uso de"
-            bold="software enfocado a esta área."
+            p="Este espacio es el registro de mi proceso aprendiendo diseño de forma autodidacta. Son proyectos donde exploro herramientas y estilos para"
+            bold="darle claridad y una identidad propia a la información."
           />
 
           <Separador titulo="Proyectos" invertir={false} />

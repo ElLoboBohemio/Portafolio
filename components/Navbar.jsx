@@ -14,14 +14,16 @@ const Navbar = () => {
   const [Menu, setMenu] = useState(true);
 
   const mostrarMenu = () => setMenu(!Menu);
+
+  // Función para cerrar el menú al hacer click en un link
+  const cerrarMenu = () => setMenu(true);
+
   return (
     <nav className={styles.nav}>
       <div className="container">
         <div className={styles.nav__div}>
-          <Link href="/" passHref>
-            <a aria-label="Logo">
-              <Logo className={styles.nav__logo} />
-            </a>
+          <Link href="/" aria-label="Logo" onClick={cerrarMenu}>
+            <Logo className={styles.nav__logo} />
           </Link>
 
           <button className={styles.nav__btn} onClick={mostrarMenu} aria-label="Toggle Menu">
@@ -34,15 +36,16 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Sidebar logic */}
       <div className={Menu ? `${styles.sidebar}` : `${styles.sidebar} ${styles.active}`}>
-        <Link href="/" passHref>
-          <a className={styles.sidebar__a}>Inicio</a>
+        <Link href="/" className={styles.sidebar__a} onClick={cerrarMenu}>
+          Inicio
         </Link>
-        <Link href="/galeria" passHref>
-          <a className={styles.sidebar__a}>Galería</a>
-        </Link>
-        <Link href="/blog" passHref>
-          <a className={styles.sidebar__a}>Blog</a>
+
+        {/* Galería eliminada */}
+
+        <Link href="/blog" className={styles.sidebar__a} onClick={cerrarMenu}>
+          Blog
         </Link>
       </div>
     </nav>
